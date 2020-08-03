@@ -5,29 +5,31 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <script src='script.js' defer></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
 <body>
-    <p>
+    <p class="header">
         Policz swoje BMI!
     </p>
     <form class="js-form">
-        <fieldset>
-            <legend>Twoje dane:</legend>
-            <p>
-                <label>
-                    Twój wzrost: <input class="js-height" required type="number" min="1" step="any">
+        <div class="field">
+            <legend class="data">Twoje dane:</legend>
+            <p class="label_and_input1">
+                <label class="label_height">
+                    Twój wzrost:  <input class="js-height" required type="number" min="1" step="any">
                 </label>
             </p>
             <p>
-                <label>
-                    Twoja waga: <input class="js-weight" required type="number" min="1" step="any">
+                <label class="label_weight">
+                    Twoja waga:  <input class="js-weight" required type="number" min="1" step="any">
                 </label>
             </p>
-        </fieldset>
-        <p>
-            <button>Policz BMI!</button>
+        </div>
+        <p class="button">
+            <button>Policz</button>
         </p>
     </form>
-    <p>Twoje BMI wynosi: <strong class="js-bmi">N/A</strong></p>
+    <p class="result_text">Twoje BMI wynosi: <div class="result"><p class="js-bmi"></p></div></p>
 </body>
 </html>
+
