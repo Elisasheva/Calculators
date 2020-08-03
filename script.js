@@ -9,5 +9,9 @@ formElement.addEventListener("submit", (event) => {
     let height = heightElement.value;
     let weight = weightElement.value; 
 
-    console.log(height, weight);
+    let bmi = weight / ((height / 100) ** 2);
+
+    bmiElement.innerText = bmi;
+
+    console.log(bmi);
 });
