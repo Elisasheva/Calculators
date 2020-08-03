@@ -1,15 +1,13 @@
 let heightElement = document.querySelector(".js-height");
+let weightElement = document.querySelector(".js-weight");
 let formElement = document.querySelector(".js-form");
+let bmiElement = document.querySelector(".js-bmi");
 
-heightElement.addEventListener("input", () => {
-    console.log(`Aktualny wzrost: ${heightElement.value}`);
-});
-
-formElement.addEventListener("reset", () => {
-    console.log('formularz zostal zresetowany');
-});
-
-formElement.addEventListener("submit", () => {
+formElement.addEventListener("submit", (event) => {
     event.preventDefault();
-    console.log('formularz zostal wyslany');
+
+    let height = heightElement.value;
+    let weight = weightElement.value; 
+
+    console.log(height, weight);
 });
