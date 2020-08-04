@@ -1,5 +1,7 @@
 body {
     background-color: rgb(236, 230, 243);
+    width: 50%;
+    margin: auto;
 }
 
 .header {
@@ -9,13 +11,11 @@ body {
     font-family: Helvetica, sans-serif;
     font-size: 30px;
     border-bottom: 1px solid rgb(19, 12, 39);
-    width: 300px;
 }
 
 .field {
     text-align: center;
     margin:auto;
-    width: 500px;
 }
 
 .data {
@@ -49,7 +49,7 @@ button {
     border: none;
     border-radius: 2rem;
     padding: 1rem 2rem;
-    margin: 50px 0 0 0;
+    margin: 0 0 50px 0;
     text-decoration: none;
     background: #1a0d2b;
     color: #ffffff;
@@ -81,16 +81,21 @@ button:active {
 }
 
 .result {
-    justify-content: center;
-    align-items: center;
     margin:auto;
-    width:40px;
-    padding:50px;
+    text-align:center;
+    width:fit-content;
+    height:70px;
+    padding: 3%;
     border-radius: 100%;
-    text-align: center;
-    display: flex;
-    color: #fff;
-    background: #000
+    color: rgb(21, 7, 36);
+    border: 2px solid rgb(37, 4, 41);
+    display:none;
+    font-size: 30px;
+    font-family: Helvetica;
+}
+
+.js-bmi {
+    margin:18px 0 0 0;
 }
 
 input {
@@ -99,4 +104,21 @@ input {
     -webkit-border-radius: 5px;
     border-radius: 5px;
     width: 50px;
+}
+
+.seen {
+    display:block;
+}
+
+@media (max-width:450px) {
+    body{
+        width: 70%;
+    }
+    .header {
+        font-size: 25px;
+    }
+
+    .result {
+        padding:20px;
+    }
 }
