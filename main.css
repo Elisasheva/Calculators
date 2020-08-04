@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(236, 230, 243);
+    background-color: rgb(230, 232, 243);
     width: 50%;
     margin: auto;
 }
@@ -42,7 +42,7 @@ body {
 
 .button {
     text-align: center;
-    margin: 50px;
+    margin: 40px;
   
 }
 
@@ -51,7 +51,7 @@ button {
     border: none;
     border-radius: 2rem;
     padding: 1rem 2rem;
-    margin: 0 0 50px 0;
+
     text-decoration: none;
     background: #1a0d2b;
     color: #ffffff;
@@ -59,9 +59,8 @@ button {
     font-size: 1rem;
     cursor: pointer;
     text-align: center;
-    transition: background 250ms ease-in-out, 
-                transform 150ms ease;
-
+    transition: 250ms ease-in-out;
+    transform: 150ms ease;
 }
 
 button:hover {
@@ -79,7 +78,7 @@ button:active {
 .result_text {
     text-align: center;
     font-family: Helvetica, sans-serif;
-    margin: 40px;
+    margin: 20px;
 }
 
 .result {
