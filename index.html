@@ -10,24 +10,23 @@
 </head>
 
 <body>
-    <p class="header">
+    <header>
         Oblicz swoje BMI
-    </p>
+    </header>
     <form class="js-form">
         <div class="field">
-            <legend class="data">Twoje dane:</legend>
+            <legend class="data"></legend>
             <p class="label_and_input1">
-                <label class="label_height">
-                    Twój wzrost: <input class="js-height" required type="number" min="1" step="any">
-                </label>
+                <div for="h" class="label_height">Twój wzrost: </div> 
+                <input class="js-height" id="h" required type="number" min="1" step="any">
             </p>
             <p>
-                <label class="label_weight">
-                    Twoja waga: <input class="js-weight" required type="number" min="1" step="any">
-                </label>
+                <div for="w" class="label_weight">Twoja waga: </div>
+                <input id="w" class="js-weight" required type="number" min="1" step="any">
+                
             </p>
         </div>
-        <p class="button">
+        <p class="button_container">
             <button>Policz</button>
         </p>
     </form>
@@ -43,61 +42,74 @@
 
 
 
-    <p class="header">
+    <header>
         Oblicz swoje dzienne zapotrzebowanie kaloryczne (CPM)
+    </header>
+
+    <p class="header2">Czym jest CPM?</p>
+
+    <p class="description">Kalkulator całkowitej przemiany materii pomoże dokładnie obliczyć twoje zapotrzebowanie
+        kaloryczne.
+
+        Całkowitą przemianą materii nazywamy sumę dobowych wydatków energetycznych związanych z metabolizmem
+        podstawowym, niezbędnym do utrzymanaia podstawowych funkcji życiowych (PPM) i aktywnością fizyczną
+        (współczynnikiem PAL z ang. physical activity level). PAL uwzględnia aktywność związaną z uprawianiem sportu
+        oraz tą polegającą na wykonywaniu codziennych obowiązków. CPM odpowiada całkowitemu zapotrzebowaniu na energię w
+        ciągu dnia, wyrażona w kilokaloriach.
+
     </p>
 
     <form class="js-form2">
         <div class="field_CPM">
-            <legend class="data">Twoje dane:</legend>
-            <p>
-            <p class="radio_woman">
+            <legend class="data"></legend>
+            <p class="cpm_inputs">
                 <label class="label_gender">
-                    Kobieta <input name="gender" class="js-gender-woman" type="radio" value="woman" required>
+                    <input name="gender" class="js-gender-woman" type="radio" value="woman" required>Kobieta
                 </label>
             </p>
-            <p class="radio_man">
+            <p class="cpm_inputs">
                 <label class="label_gender">
-                    Mężczyzna <input name="gender" class="js-gender-man" type="radio" value="man" required>
+                    <input name="gender" class="js-gender-man" type="radio" value="man" required>Mężczyzna
                 </label>
-            <p>
-            </p>
-            <p class="label_and_input_height">
-                <label class="label_height">
-                    Twój wzrost: <input class="js-height2" required type="number" min="1" step="any">
+            <div>
+                <p class="cpm_inputs">
+                    <div class="label_height" for="height">Twój wzrost: </div>
+                        <input class="js-height2" id="height" required type="number" min="1" step="any">
+                </p>
+                <p class="cpm_inputs">
+                    <div class="label_weight" for="weight">Twoja waga: </div>
+                        <input class="js-weight2" id="weight" required type="number" min="1" step="any">
+                </p>
+                <p class="cpm_inputs">
+                    <div class="label_age" for="age">Twój wiek: </div>
+                    <input class="js-age" id="age" required type="number" min="1" step="any">
+                </p>
+            </div>
+            <div class="physical_activity_container">
+                <label class="physical_activity_label">
+                    Poziom aktywności fizycznej:
+                    <div class="physical_activity">
+                        <select name="physical_activity">
+                            <option value="no-activity" class="no-activity">siedzący tryb życia, bez dodatkowych ćwiczeń
+                                fizycznych</option>
+                            <option value="mild-activity" class="mild-activity">siedzący tryb życia oraz niewielka,
+                                niezbyt
+                                intensywna aktywność fizyczna</option>
+                            <option value="average-activity" class="average-activity">praca zawodowa wymagająca
+                                dodatkowej
+                                aktywności fizycznej (mieszana)
+                            </option>
+                            <option value="high-activity" class="high-activity">praca stojąca</option>
+                            <option value="very-high-activity" class="very-high-activity">ciężka i bardzo ciężka praca
+                                fizyczna</option>
+                        </select>
+                    </div>
                 </label>
-            </p>
-            <p class="label_and_input_weight">
-                <label class="label_weight">
-                    Twoja waga: <input class="js-weight2" required type="number" min="1" step="any">
-                </label>
-            </p>
-            <p>
-                <label class="label_age">
-                    Twój wiek: <input class="js-age" required type="number" min="1" step="any">
-                </label>
-            </p>
-            <label class="physical_activity_label">
-                Poziom aktywności fizycznej:
-                <div class="physical_activity">
-                    <select name="physical_activity">
-                        <option value="no-activity" class="no-activity">siedzący tryb życia, bez dodatkowych ćwiczeń
-                            fizycznych</option>
-                        <option value="mild-activity" class="mild-activity">siedzący tryb życia oraz niewielka, niezbyt
-                            intensywna aktywność fizyczna</option>
-                        <option value="average-activity" class="average-activity">praca zawodowa wymagająca dodatkowej
-                            aktywności fizycznej (mieszana)
-                        </option>
-                        <option value="high-activity" class="high-activity">praca stojąca</option>
-                        <option value="very-high-activity" class="very-high-activity">ciężka i bardzo ciężka praca
-                            fizyczna</option>
-                    </select>
-                </div>
-            </label>
+            </div>
         </div>
 
 
-        <p class="button">
+        <p class="button_container">
             <button>Policz</button>
         </p>
     </form>

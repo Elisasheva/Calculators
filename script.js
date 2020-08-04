@@ -14,8 +14,6 @@ formElement.addEventListener("submit", (event) => {
 
     bmiElement.innerText =  bmi.toFixed(2);
     resultElement.classList.add("seen");
-
-    console.log(bmi);
 });
 
 let formElement2 = document.querySelector(".js-form2");
