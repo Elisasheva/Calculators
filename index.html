@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <title>Page Title</title>
@@ -7,21 +8,22 @@
     <script src='script.js' defer></script>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
+
 <body>
     <p class="header">
-        Policz swoje BMI!
+        Oblicz swoje BMI
     </p>
     <form class="js-form">
         <div class="field">
             <legend class="data">Twoje dane:</legend>
             <p class="label_and_input1">
                 <label class="label_height">
-                    Twój wzrost:  <input class="js-height" required type="number" min="1" step="any">
+                    Twój wzrost: <input class="js-height" required type="number" min="1" step="any">
                 </label>
             </p>
             <p>
                 <label class="label_weight">
-                    Twoja waga:  <input class="js-weight" required type="number" min="1" step="any">
+                    Twoja waga: <input class="js-weight" required type="number" min="1" step="any">
                 </label>
             </p>
         </div>
@@ -29,10 +31,66 @@
             <button>Policz</button>
         </p>
     </form>
-    <p class="result_text">Twoje BMI wynosi: <div class="result"><p class="js-bmi"></p></div></p>
+    <p class="result_text">Twoje BMI wynosi:
+    <div class="result">
+        <p class="js-bmi"></p>
+    </div>
+    </p>
 
-    
+
+
+
+
+
+
+    <p class="header">
+        Oblicz swoje dzienne zapotrzebowanie kaloryczne (CPM)
+    </p>
+
+    <form class="js-form2">
+        <div class="field_CPM">
+            <legend class="data">Twoje dane:</legend>
+            <p>
+                <p class="radio_woman">
+                    <label class="label_gender">
+                        Kobieta <input name="gender" class="js-gender-woman" type="radio" value="woman">
+                    </label>
+                </p>
+                <p class="radio_man">
+                    <label class="label_gender">
+                        Mężczyzna <input name="gender" class="js-gender-man" type="radio" value="man">
+                    </label>
+                <p>
+                </p>
+            <p class="label_and_input_height">
+                <label class="label_height">
+                    Twój wzrost: <input class="js-height2" required type="number" min="1" step="any">
+                </label>
+            </p>
+            <p class="label_and_input_weight">
+                <label class="label_weight">
+                    Twoja waga: <input class="js-weight2" required type="number" min="1" step="any">
+                </label>
+            </p>
+            <p>
+                <label class="label_age">
+                    Twój wiek: <input class="js-age" required type="number" min="1" step="any">
+                </label>
+            </p>
+        </div>
+
+
+        <p class="button">
+            <button>Policz</button>
+        </p>
+    </form>
+
+    <p class="result_text">Twoje CPM wynosi:
+    <div class="result2">
+        <p class="js-cpm"></p>
+    </div>
+    </p>
 
 </body>
-</html>
 
+</html>
