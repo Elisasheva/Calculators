@@ -160,6 +160,7 @@ select {
     border:2px solid #ccc; 
     -webkit-border-radius: 5px;
     border-radius: 5px;
+    width:80%;
 }
 
 .header2 {
@@ -190,5 +191,12 @@ select {
 
 .js-gender-woman, .js-gender-man {
     width:40px;
+}
+
+.result_description {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 150%;
 }
 
