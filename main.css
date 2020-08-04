@@ -149,3 +149,16 @@ input {
     align-items: center;
 }
 
+.physical_activity_label {
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+select {
+    margin-top: 10px;
+    width: 250px;
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
