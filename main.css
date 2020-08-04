@@ -99,7 +99,6 @@ button:active {
     margin:auto;
     text-align:center;
     width:fit-content;
-    height:70px;
     padding: 3%;
     border-radius: 100%;
     color: rgb(21, 7, 36);
@@ -109,8 +108,12 @@ button:active {
     font-family: Helvetica;
 }
 
-.js-bmi, .js-cpm {
+.js-bmi {
     margin:18px 0 0 0;
+}
+
+.js-cpm {
+    margin:0;
 }
 
 input {
