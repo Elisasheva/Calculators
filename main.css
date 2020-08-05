@@ -54,7 +54,6 @@ header {
 
 .cpm_label_gender {
   margin-right: 36px;
-  margin-left: 10px;
 }
 
 input {
@@ -66,8 +65,14 @@ input {
 }
 
 .cpm_inputs {
-  display: inline-block;
+  display: block;
   max-width: 400px;
+  margin:20px;
+}
+
+.cpm_inputs2 {
+    display: inline-block;
+    max-width: 400px;
 }
 
 .cpm_height,
