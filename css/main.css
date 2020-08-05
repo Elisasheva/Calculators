@@ -1,3 +1,7 @@
+html {
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgb(242, 243, 248);
   width: 50%;
@@ -70,7 +74,7 @@ input {
   margin:20px;
 }
 
-.cpm_inputs2 {
+.cpm_inputs_gender {
     display: inline-block;
 }
 
