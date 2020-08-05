@@ -1,202 +1,204 @@
-
-
 body {
-    background-color: rgb(242, 243, 248);
-    width: 50%;
-    margin: 0 auto 100px auto;
+  background-color: rgb(242, 243, 248);
+  width: 50%;
+  margin: 0 auto 100px auto;
 }
 
 header {
-    text-align: center;
-    margin: 70px auto;
-    padding: 20px;
-    font-family: Helvetica, sans-serif;
-    font-size: 30px;
-    line-height: 140%;
-    border-bottom: 1px solid rgb(19, 12, 39);
+  text-align: center;
+  margin: 70px auto;
+  padding: 20px;
+  font-family: Helvetica, sans-serif;
+  font-size: 30px;
+  line-height: 140%;
+  border-bottom: 1px solid rgb(19, 12, 39);
 }
 
-.field {
-    text-align: center;
-    margin:auto;
+.cpm_descriprion_header {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-.data {
-    margin:30px 0 40px 0;
-    font-family: Helvetica, sans-serif;
-    font-size: 25px;
+.cpm_description {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+  margin-bottom: 60px;
 }
 
-.label_height, .label_weight, .label_age, .label_gender {
-    font-family: Helvetica, sans-serif;
-    font-size: 18px;
+.bmi_form_container {
+  text-align: center;
+  margin: auto;
 }
 
-.label_gender {
-    margin-left:-22px;
-    margin-right: 20px;
+.cpm_form_container {
+  text-align: center;
 }
 
-.cpm_inputs {
-    display: inline-block;
-    max-width: 400px;
+.label_height,
+.label_weight,
+.cpm_label_age,
+.cpm_label_gender {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
 }
 
-.button_container {
-    text-align: center;
-    margin:40px;
+.label_height,
+.label_weight,
+.cpm_label_age {
+  width: 130px;
+  display: inline-block;
+  text-align: left;
 }
 
-button {
-    display: inline-block;
-    border: none;
-    border-radius: 2rem;
-    padding: 1rem 2rem;
-    text-decoration: none;
-    background: #1a0d2b;
-    color: #ffffff;
-    font-family: Helvetica, sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: center;
-    transition: 250ms ease-in-out;
-    transform: 150ms ease;
-}
-
-button:hover {
-    background: #741d77;
-}
-
-button:focus {
-    outline: none;
-}
-
-button:active {
-    transform: scale(1.2);
-}
-
-.result_text {
-    text-align: center;
-    font-family: Helvetica, sans-serif;
-    margin: 20px;
-}
-
-.result {
-    margin:auto;
-    text-align:center;
-    width:fit-content;
-    height:70px;
-    padding: 3%;
-    border-radius: 100%;
-    color: rgb(21, 7, 36);
-    border: 2px solid rgb(37, 4, 41);
-    display:none;
-    font-size: 30px;
-    font-family: Helvetica;
-}
-
-.result2 {
-    margin:auto;
-    text-align:center;
-    width:fit-content;
-    padding: 3%;
-    border-radius: 100%;
-    color: rgb(21, 7, 36);
-    border: 2px solid rgb(37, 4, 41);
-    display:none;
-    font-size: 30px;
-    font-family: Helvetica;
-}
-
-.js-bmi {
-    margin:18px 0 0 0;
-}
-
-.js-cpm {
-    margin:0;
+.cpm_label_gender {
+  margin-right: 36px;
+  margin-left: 10px;
 }
 
 input {
-    padding:9px; 
-    border:2px solid #ccc; 
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    width: 90px;
+  padding: 9px;
+  border: 2px solid #ccc;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  width: 90px;
 }
 
-.seen {
-    display:block;
+.cpm_inputs {
+  display: inline-block;
+  max-width: 400px;
 }
 
-@media (max-width:450px) {
-    body {
-        width: 80%;
-    }
-    .header {
-        font-size: 25px;
-    }
-
-    .result {
-        padding:20px;
-    }
-
-    select {
-      width:200px;
-    }
+.cpm_height,
+.cpm_weight,
+.cpm_age {
+  width: 80px;
 }
+
+.cpm_gender_woman,
+.cpm_gender_man {
+  width: 40px;
+}
+
 .physical_activity_container {
-    margin: 50px 0 50px 0;
-    text-align: center;
+  margin: 50px 0 50px 0;
+  text-align: center;
 }
 
 .physical_activity_label {
-    font-family: Helvetica, sans-serif;
-    font-size: 18px;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
 }
 
 select {
-    margin-top: 10px;
-    padding:5px; 
-    border:2px solid #ccc; 
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    width:80%;
+  margin-top: 10px;
+  padding: 5px;
+  border: 2px solid #ccc;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  width: 60%;
 }
 
-.header2 {
-    font-family: Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
+.button_container {
+  text-align: center;
+  margin: 40px;
 }
 
-.description {
-    font-family: Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 150%;
+.buttons {
+  display: inline-block;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  background: #1a0d2b;
+  color: #ffffff;
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: 250ms ease-in-out;
+  transform: 150ms ease;
 }
 
-.js-height2, .js-weight2, .js-age {
-    width:80px;
+.buttons:hover {
+  background: #741d77;
 }
 
-.label_height, .label_weight, .label_age {
-    width:130px;
-    display: inline-block;
-    text-align:left;
+.buttons:focus {
+  outline: none;
 }
 
-.field_CPM {
-   text-align: center;
+.buttons:active {
+  transform: scale(1.2);
 }
 
-.js-gender-woman, .js-gender-man {
-    width:40px;
+.result_header {
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  margin: 20px;
 }
 
-.result_description {
-    text-align: center;
-    font-family: Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 150%;
+.bmi_result_circle {
+  margin: auto;
+  text-align: center;
+  width: fit-content;
+  height: 70px;
+  padding: 3%;
+  border-radius: 100%;
+  color: rgb(21, 7, 36);
+  border: 2px solid rgb(37, 4, 41);
+  display: none;
+  font-size: 30px;
+  font-family: Helvetica;
 }
 
+.cpm_result_circle {
+  margin: auto;
+  text-align: center;
+  width: fit-content;
+  padding: 3%;
+  border-radius: 100%;
+  color: rgb(21, 7, 36);
+  border: 2px solid rgb(37, 4, 41);
+  display: none;
+  font-size: 30px;
+  font-family: Helvetica;
+}
+
+.bmi_result_description {
+  text-align: left;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: 40px;
+}
+
+.bmi_result {
+  margin: 18px 0 0 0;
+}
+
+.cpm_result {
+  margin: 0;
+}
+
+.seen {
+  display: block;
+}
+
+@media (max-width: 450px) {
+  body {
+    width: 80%;
+  }
+  .header {
+    font-size: 25px;
+  }
+
+  .result {
+    padding: 20px;
+  }
+
+  select {
+    width: 200px;
+  }
+}

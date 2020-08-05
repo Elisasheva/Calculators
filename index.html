@@ -13,101 +13,95 @@
     <header>
         Oblicz swoje BMI
     </header>
-    <form class="js-form">
-        <div class="field">
-            <legend class="data"></legend>
-            <p class="label_and_input1">
-                <div for="h" class="label_height">Twój wzrost: </div> 
-                <input class="js-height" id="h" required type="number" min="1" step="any">
+    <form class="bmi_form">
+        <div class="bmi_form_container">
+            <p>
+                <label for="height1" class="label_height">Twój wzrost: </label>
+                <input id="height1" class="bmi_height" required type="number" min="1" step="any">
             </p>
             <p>
-                <div for="w" class="label_weight">Twoja waga: </div>
-                <input id="w" class="js-weight" required type="number" min="1" step="any">
-                
+                <label for="weight1" class="label_weight">Twoja waga: </label>
+                <input id="weight1" class="bmi_weight" required type="number" min="1" step="any">
             </p>
         </div>
         <p class="button_container">
-            <button>Policz</button>
+            <button class="buttons">Policz</button>
         </p>
     </form>
 
-    <p class="result_text">Twoje BMI wynosi:
-    <div class="result">
-        <p class="js-bmi"></p>
+    <p class="result_header">Twoje BMI wynosi:
+    <div class="bmi_result_circle">
+        <p class="bmi_result"></p>
     </div>
     </p>
-
-    <p class="result_description"></p>
+    <p class="bmi_result_description"></p>
 
 
     <header>
         Oblicz swoje dzienne zapotrzebowanie kaloryczne (CPM)
     </header>
-
-    <p class="header2">Czym jest CPM?</p>
-
-    <p class="description">
-        Kalkulator całkowitej przemiany materii pomoże dokładnie obliczyć twoje zapotrzebowanie kaloryczne. Całkowitą przemianą materii nazywamy sumę dobowych wydatków energetycznych związanych z metabolizmem podstawowym, niezbędnym do utrzymanaia podstawowych funkcji życiowych (PPM) i aktywnością fizyczną (współczynnikiem PAL z ang. physical activity level). PAL uwzględnia aktywność związaną z uprawianiem sportu oraz tą polegającą na wykonywaniu codziennych obowiązków. CPM odpowiada całkowitemu zapotrzebowaniu na energię w ciągu dnia, wyrażoną w kilokaloriach.
+    <h2 class="cpm_descriprion_header">Czym jest CPM?</h2>
+    <p class="cpm_description">
+        Kalkulator całkowitej przemiany materii pomoże dokładnie obliczyć twoje zapotrzebowanie kaloryczne. Całkowitą
+        przemianą materii nazywamy sumę dobowych wydatków energetycznych związanych z metabolizmem podstawowym,
+        niezbędnym do utrzymanaia podstawowych funkcji życiowych (PPM) i aktywnością fizyczną (współczynnikiem PAL z
+        ang. physical activity level). PAL uwzględnia aktywność związaną z uprawianiem sportu oraz tą polegającą na
+        wykonywaniu codziennych obowiązków. CPM odpowiada całkowitemu zapotrzebowaniu na energię w ciągu dnia, wyrażoną
+        w kilokaloriach.
     </p>
 
-    <form class="js-form2">
-        <div class="field_CPM">
-            <legend class="data"></legend>
+    <form class="cpm_form">
+        <div class="cpm_form_container">
             <p class="cpm_inputs">
-                <label class="label_gender">
-                    <input name="gender" class="js-gender-woman" type="radio" value="woman" required>Kobieta
+                <label class="cpm_label_gender">
+                    <input name="gender" class="cpm_gender_woman" type="radio" value="woman" required>Kobieta
                 </label>
             </p>
             <p class="cpm_inputs">
-                <label class="label_gender">
-                    <input name="gender" class="js-gender-man" type="radio" value="man" required>Mężczyzna
+                <label class="cpm_label_gender">
+                    <input name="gender" class="cpm_gender_man" type="radio" value="man" required>Mężczyzna
                 </label>
             <div>
                 <p class="cpm_inputs">
-                    <div class="label_height" for="height">Twój wzrost: </div>
-                        <input class="js-height2" id="height" required type="number" min="1" step="any">
+                <div class="label_height" for="height">Twój wzrost: </div>
+                <input class="cpm_height" id="height" required type="number" min="1" step="any">
                 </p>
                 <p class="cpm_inputs">
-                    <div class="label_weight" for="weight">Twoja waga: </div>
-                        <input class="js-weight2" id="weight" required type="number" min="1" step="any">
+                <div class="label_weight" for="weight">Twoja waga: </div>
+                <input class="cpm_weight" id="weight" required type="number" min="1" step="any">
                 </p>
                 <p class="cpm_inputs">
-                    <div class="label_age" for="age">Twój wiek: </div>
-                    <input class="js-age" id="age" required type="number" min="1" step="any">
+                <div class="cpm_label_age" for="age">Twój wiek: </div>
+                <input class="cpm_age" id="age" required type="number" min="1" step="any">
                 </p>
             </div>
             <div class="physical_activity_container">
                 <label class="physical_activity_label">
                     Poziom aktywności fizycznej:
-                    <div class="physical_activity">
-                        <select name="physical_activity">
-                            <option value="no-activity" class="no-activity">siedzący tryb życia, bez dodatkowych ćwiczeń
+                    <div>
+                        <select>
+                            <option value="no-activity" class="no_activity">siedzący tryb życia, bez dodatkowych ćwiczeń
                                 fizycznych</option>
-                            <option value="mild-activity" class="mild-activity">siedzący tryb życia oraz niewielka,
-                                niezbyt
-                                intensywna aktywność fizyczna</option>
-                            <option value="average-activity" class="average-activity">praca zawodowa wymagająca
-                                dodatkowej
-                                aktywności fizycznej (mieszana)
-                            </option>
-                            <option value="high-activity" class="high-activity">praca stojąca</option>
-                            <option value="very-high-activity" class="very-high-activity">ciężka i bardzo ciężka praca
+                            <option value="mild-activity" class="mild_activity">siedzący tryb życia oraz niewielka,
+                                niezbyt intensywna aktywność fizyczna</option>
+                            <option value="average-activity" class="average_activity">praca zawodowa wymagająca
+                                dodatkowej aktywności fizycznej (mieszana)</option>
+                            <option value="high-activity" class="high_activity">praca stojąca</option>
+                            <option value="very-high-activity" class="very_high_activity">ciężka i bardzo ciężka praca
                                 fizyczna</option>
                         </select>
                     </div>
                 </label>
             </div>
         </div>
-
-
         <p class="button_container">
-            <button>Policz</button>
+            <button class="buttons">Policz</button>
         </p>
     </form>
 
-    <p class="result_text">Twoje CPM wynosi:
-    <div class="result2">
-        <p class="js-cpm"></p>
+    <p class="result_header">Twoje CPM wynosi:
+    <div class="cpm_result_circle">
+        <p class="cpm_result"></p>
     </div>
     </p>
 
