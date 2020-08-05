@@ -15,7 +15,6 @@
         const bmi = weight / ((height / 100) ** 2);
 
         bmiElement.innerText = bmi.toFixed(2);
-        resultElement.classList.add("seen");
 
         if (bmi < 16) {
             descriptionElement.innerText = "Wygłodzenie. Masa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny i być może zleci wykonanie badań diagnostycznych i/lub modyfikację diety.";
@@ -38,6 +37,9 @@
         else if (bmi >= 40) {
             descriptionElement.innerText = "Otyłość III stopnia (chorobliwa). Masa ciała jest zbyt wysoka, wartości BMI wskazuje na rozwijającą się otyłość III stopnia. Skontaktuj się ze swoim lekarzem, który zarekomenduje modyfikację diety i wprowadzenie codziennej dawki ruchu. Być może konieczne będzie wprowadzenie leczenia farmakologicznego. Wdrażając zmiany i przestrzegając zaleceń lekarza, unikniesz powikłań otyłości i zachowasz zdrowie na dłużej.";
         }
+
+        resultElement.classList.add("seen");
+        
     });
 }
 
