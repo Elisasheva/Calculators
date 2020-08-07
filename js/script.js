@@ -52,15 +52,16 @@
         const heightElement2 = document.querySelector(".cpm_height");
         const weightElement2 = document.querySelector(".cpm_weight");
         const ageElement = document.querySelector(".cpm_age");
+
         const womanElement = document.querySelector(".cpm_gender_woman");
         const manElement = document.querySelector(".cpm_gender_man");
+
+        const activityElement = document.querySelector(".js-activity");
+
         const cpmElement = document.querySelector(".cpm_result");
         const resultElement2 = document.querySelector(".cpm_result_circle");
-        const noActivity = document.querySelector(".no_activity");
-        const mildActivity = document.querySelector(".mild_activity");
-        const averageActivity = document.querySelector(".average_activity");
-        const highActivity = document.querySelector(".high_activity");
-        const veryhighActivity = document.querySelector(".very_high_activity");
+      
+        
         const height = heightElement2.value;
         const weight = weightElement2.value;
         const age = ageElement.value;
@@ -68,38 +69,88 @@
         const cpmMan = (10 * weight) + (6.25 * height) - (5 * age) + 5;
         const cpmWoman = (10 * weight) + (6.25 * height) - (5 * age) - 161;
 
-        if (womanElement.checked && noActivity.selected) {
-            cpmElement.innerText = Math.round((cpmWoman) * 1.2);
+        if (womanElement.checked) {
+            cpmElement.innerText = Math.round((cpmWoman) * activityElement.value)
         }
-        else if (womanElement.checked && mildActivity.selected) {
-            cpmElement.innerText = Math.round((cpmWoman) * 1.4);
+        else {
+            cpmElement.innerText = Math.round((cpmMan) * activityElement.value)
         }
-        else if (womanElement.checked && averageActivity.selected) {
-            cpmElement.innerText = Math.round((cpmWoman) * 1.6);
-        }
-        else if (womanElement.checked && highActivity.selected) {
-            cpmElement.innerText = Math.round((cpmWoman) * 1.8);
-        }
-        else if (womanElement.checked && veryhighActivity.selected) {
-            cpmElement.innerText = Math.round((cpmWoman) * 2);
-        }
-        else if (manElement.checked && noActivity.selected) {
-            cpmElement.innerText = Math.round((cpmMan) * 1.2);
-        }
-        else if (manElement.checked && mildActivity.selected) {
-            cpmElement.innerText = Math.round((cpmMan) * 1.4);
-        }
-        else if (manElement.checked && averageActivity.selected) {
-            cpmElement.innerText = Math.round((cpmMan) * 1.6);
-        }
-        else if (manElement.checked && highActivity.selected) {
-            cpmElement.innerText = Math.round((cpmMan) * 1.8);
-        }
-        else if (manElement.checked && veryhighActivity.selected) {
-            cpmElement.innerText = Math.round((cpmMan) * 2);
-        }
+
 
         resultElement2.classList.add("seen");
 
     })
 }
+
+
+        // DWA INNE SPOSOBY:
+
+
+        // switch ((womanElement || manElement) && activityElement.value) {
+        //     case womanElement.checked && "no-activity":
+        //          cpmElement.innerText = Math.round((cpmWoman) * 1.2);
+        //          break;
+        //     case womanElement.checked && "mild-activity":
+        //          cpmElement.innerText = Math.round((cpmWoman) * 1.4);
+        //          break;
+        //     case womanElement.checked && "average-activity":
+        //          cpmElement.innerText = Math.round((cpmWoman) * 1.6);
+        //          break;
+        //     case womanElement.checked && "high-activity":
+        //          cpmElement.innerText = Math.round((cpmWoman) * 1.8);
+        //          break;
+        //     case womanElement.checked && "very-high-activity":
+        //          cpmElement.innerText = Math.round((cpmWoman) * 2);
+        //          break;
+        //     case manElement.checked && "no-activity":
+        //          cpmElement.innerText = Math.round((cpmMan) * 1.2);
+        //          break;
+        //     case manElement.checked && "mild-activity":
+        //          cpmElement.innerText = Math.round((cpmMan) * 1.4);
+        //          break;
+        //     case manElement.checked && "average-activity":
+        //          cpmElement.innerText = Math.round((cpmMan) * 1.6);
+        //          break;
+        //     case manElement.checked && "high-activity":
+        //          cpmElement.innerText = Math.round((cpmMan) * 1.8);
+        //          break;
+        //     case manElement.checked && "very-high-activity":
+        //          cpmElement.innerText = Math.round((cpmMan) * 2);
+        //          break;   
+        // }
+
+      
+        
+        // if (womanElement.checked && noActivity.selected) {
+        //     cpmElement.innerText = Math.round((cpmWoman) * 1.2);
+        // }
+        // else if (womanElement.checked && mildActivity.selected) {
+        //     cpmElement.innerText = Math.round((cpmWoman) * 1.4);
+        // }
+        // else if (womanElement.checked && averageActivity.selected) {
+        //     cpmElement.innerText = Math.round((cpmWoman) * 1.6);
+        // }
+        // else if (womanElement.checked && highActivity.selected) {
+        //     cpmElement.innerText = Math.round((cpmWoman) * 1.8);
+        // }
+        // else if (womanElement.checked && veryhighActivity.selected) {
+        //     cpmElement.innerText = Math.round((cpmWoman) * 2);
+        // }
+        // else if (manElement.checked && noActivity.selected) {
+        //     cpmElement.innerText = Math.round((cpmMan) * 1.2);
+        // }
+        // else if (manElement.checked && mildActivity.selected) {
+        //     cpmElement.innerText = Math.round((cpmMan) * 1.4);
+        // }
+        // else if (manElement.checked && averageActivity.selected) {
+        //     cpmElement.innerText = Math.round((cpmMan) * 1.6);
+        // }
+        // else if (manElement.checked && highActivity.selected) {
+        //     cpmElement.innerText = Math.round((cpmMan) * 1.8);
+        // }
+        // else if (manElement.checked && veryhighActivity.selected) {
+        //     cpmElement.innerText = Math.round((cpmMan) * 2);
+        // }
+
+        
+

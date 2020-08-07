@@ -62,34 +62,36 @@
                 <label class="cpm_label_gender">
                     <input name="gender" class="cpm_gender_man" type="radio" value="man" required>Mężczyzna
                 </label>
-            <div>
-                <div class="cpm_inputs">
-                    <div class="label_height">Twój wzrost: </div>
-                    <input class="cpm_height" required type="number" min="1" step="any">
-                </div>
-                <div class="cpm_inputs">
-                    <div class="label_weight">Twoja waga: </div>
-                    <input class="cpm_weight" required type="number" min="1" step="any">
-                </div>
-                <div class="cpm_inputs">
-                    <div class="cpm_label_age">Twój wiek: </div>
-                    <input class="cpm_age" required type="number" min="1" step="any">
-                </div>
+            </p>
+        </div>
+        <div class="cpm_inputs_container">
+            <div class="cpm_inputs">
+                <div class="label_height">Twój wzrost: </div>
+                <input class="cpm_height" required type="number" min="1" step="any">
             </div>
-            <div class="physical_activity_label">
-                Poziom aktywności fizycznej:
-                <select>
-                    <option value="no-activity" class="no_activity">siedzący tryb życia, bez dodatkowych ćwiczeń
-                        fizycznych</option>
-                    <option value="mild-activity" class="mild_activity">siedzący tryb życia oraz niewielka,
-                        niezbyt intensywna aktywność fizyczna</option>
-                    <option value="average-activity" class="average_activity">praca zawodowa wymagająca
-                        dodatkowej aktywności fizycznej (mieszana)</option>
-                    <option value="high-activity" class="high_activity">praca stojąca</option>
-                    <option value="very-high-activity" class="very_high_activity">ciężka i bardzo ciężka praca
-                        fizyczna</option>
-                </select>
+            <div class="cpm_inputs">
+                <div class="label_weight">Twoja waga: </div>
+                <input class="cpm_weight" required type="number" min="1" step="any">
             </div>
+            <div class="cpm_inputs">
+                <div class="cpm_label_age">Twój wiek: </div>
+                <input class="cpm_age" required type="number" min="1" step="any">
+            </div>
+        </div>
+        <div class="physical_activity_label">
+            Poziom aktywności fizycznej:
+            <select class="js-activity">
+                <option value="1.2">siedzący tryb życia, bez dodatkowych ćwiczeń
+                    fizycznych</option>
+                <option value="1.4">siedzący tryb życia oraz niewielka,
+                    niezbyt intensywna aktywność fizyczna</option>
+                <option value="1.6">praca zawodowa wymagająca
+                    dodatkowej aktywności fizycznej (mieszana)</option>
+                <option value="1.8">praca stojąca</option>
+                <option value="2">ciężka i bardzo ciężka praca
+                    fizyczna</option>
+            </select>
+        </div>
         </div>
         <p class="button_container">
             <button class="buttons">Policz</button>
